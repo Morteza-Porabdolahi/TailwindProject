@@ -1,7 +1,12 @@
-function handleNavbarPosition(){
-	const scrollTop = document.documentElement.scrollTop;
+const handleNavbarPosition = (function (){
+	const navbarElem = document.querySelector('nav');
 
-	console.log(scrollTop)
-}
+	return function(){
+		const scrollTop = document.documentElement.scrollTop;
 
-window.onload = handleNavbarPosition;
+		navbarElem.classList[scrollTop <= 0 ? 'remove' : 'add']('active');
+	}
+})()
+
+window.addEventListener('load', handleNavbarPosition);
+window.addEventListener('scroll', handleNavbarPosition);

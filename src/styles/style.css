@@ -2,11 +2,11 @@
 
 @layer base{
 	h1 {
-		@apply text-2xl;
+		@apply text-3xl;
 	}
 
 	h2{
-		@apply text-xl;
+		@apply text-2xl;
 	}
 
 	h3{
@@ -15,4 +15,15 @@
 }
 
 @tailwind components;
+
+@layer components{
+	.active {
+		@apply bg-white shadow-md;
+	}
+}
+
 @tailwind utilities;
+
+.get-started-btn{
+	box-shadow: 1px 1px 5px #dc2626, inset 0 2px 1px rgb(255,255,255,.3);
+}
