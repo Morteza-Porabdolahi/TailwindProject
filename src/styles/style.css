@@ -1,29 +1,29 @@
 @tailwind base;
 
-@layer base{
-	h1 {
-		@apply text-3xl;
-	}
+@layer base {
+  h1 {
+    @apply text-3xl;
+  }
 
-	h2{
-		@apply text-2xl;
-	}
+  h2 {
+    @apply text-2xl;
+  }
 
-	h3{
-		@apply text-lg;
-	}
+  h3 {
+    @apply text-lg;
+  }
 }
 
 @tailwind components;
 
-@layer components{
-	.active {
-		@apply bg-white shadow-md;
-	}
+@layer components {
+  .active {
+    @apply bg-white shadow-md;
+  }
 }
 
 @tailwind utilities;
 
-.get-started-btn{
-	box-shadow: 1px 1px 5px #dc2626, inset 0 2px 1px rgb(255,255,255,.3);
+.signup-btn {
+  @apply text-red-600 border-red-600 border px-8 py-1.5 rounded-full;
 }
