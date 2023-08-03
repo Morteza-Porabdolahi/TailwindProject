@@ -22,6 +22,7 @@ window.addEventListener('scroll', handleNavbarPosition);
 // Swiper Initialize
 (function () {
   const swiper = new Swiper('.swiper', {
+    spaceBetween: '12',
     pagination: {
       el: '.pagination',
       bulletClass: 'pagination__bullet',
@@ -30,8 +31,8 @@ window.addEventListener('scroll', handleNavbarPosition);
     },
     modules: [Navigation, Pagination],
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.next-page-btn',
+      prevEl: '.prev-page-btn',
     },
   });
 })();

@@ -1,4 +1,6 @@
 @tailwind base;
+@tailwind utilities;
+@tailwind components;
 
 @layer base {
   h1 {
@@ -16,9 +18,19 @@
   h4 {
     @apply text-xl;
   }
-}
 
-@tailwind components;
+  p {
+    @apply md:text-base lg:text-lg 2xl:text-xl;
+  }
+
+  span {
+    @apply xl:text-lg !important;
+  }
+
+  i {
+    @apply lg:text-2xl;
+  }
+}
 
 @layer components {
   .active {
@@ -34,8 +46,6 @@
   }
 }
 
-@tailwind utilities;
-
 .signup-btn {
-  @apply text-red-600 border-red-600 border px-8 py-1.5 rounded-full;
+  @apply text-red-600 border-red-600 border px-8 py-1.5 rounded-full transition hover:bg-red-600 hover:text-white;
 }
